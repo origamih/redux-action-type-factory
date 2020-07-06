@@ -1,6 +1,6 @@
 {
   "name": "redux-action-type-factory",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Simple tool to create redux action type list with minimal typing, but fully autocomplete support",
   "main": "index.ts",
   "scripts": {
@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/origamih/redux-action-type-factory/issues"
   },
-  "homepage": "https://github.com/origamih/redux-action-type-factory#readme"
+  "homepage": "https://github.com/origamih/redux-action-type-factory#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.3",
+    "jest": "^26.1.0",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.9.6"
+  }
 }

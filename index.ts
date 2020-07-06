@@ -1,5 +1,6 @@
 export function actionTypesFactory<T extends string[]>(prefix: string, ...actionType: T): {
   [K in T[number]]: {
+    default: K,
     begin: string,
     succeeded: string,
     failed: string
@@ -15,6 +16,7 @@ export function actionTypesFactory(prefix: string, ...actionType: string[]): { [
   return actionType.reduce((acc, type) => ({
     ...acc,
     [type]: {
+      default: `${prefixString}${type}`,
       begin: `${prefixString}${type}_BEGIN`,
       succeeded: `${prefixString}${type}_SUCCEEDED`,
       failed: `${prefixString}${type}_FAILED`,
