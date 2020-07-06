@@ -1,0 +1,24 @@
+{
+  "name": "redux-action-type-factory",
+  "version": "1.0.0",
+  "description": "Simple tool to create redux action type list with minimal typing, but fully autocomplete support",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/origamih/redux-action-type-factory.git"
+  },
+  "keywords": [
+    "redux",
+    "typescript",
+    "actionType"
+  ],
+  "author": "Huy Tran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/origamih/redux-action-type-factory/issues"
+  },
+  "homepage": "https://github.com/origamih/redux-action-type-factory#readme"
+}
