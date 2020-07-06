@@ -18,7 +18,7 @@ yarn add redux-action-type-factory
 
 - Function `actionTypesFactory` accepts first argument as the prefix, if this is empty string then there will be no prefix, the remaining arguments will be the action types.
 
-- Each defined actionType has three members:
+- Each defined actionType has three members:<br />
 `begin`: `ACTION_BEGIN` <br />
 `succeeded`: `ACTION_SUCCEEDED` <br />
 `failed`: `ACTION_FAILED` <br />
