@@ -14,14 +14,14 @@ yarn add redux-action-type-factory
 ```
 
 ### Basic Usage
-This needs `typescript` to support action type `key` intellisense.
+- This relies on `typescript` for intellisense to run.
 
-Function `actionTypesFactory` accepts first argument as the prefix, if this is empty string then there will be no prefix, the remaining arguments will be the action types.
+- Function `actionTypesFactory` accepts first argument as the prefix, if this is empty string then there will be no prefix, the remaining arguments will be the action types.
 
-Each defined actionType has three members:
-`begin`: `ACTION_BEGIN`
-`succeeded`: `ACTION_SUCCEEDED`
-`failed`: `ACTION_FAILED`
+- Each defined actionType has three members:
+`begin`: `ACTION_BEGIN` <br />
+`succeeded`: `ACTION_SUCCEEDED` <br />
+`failed`: `ACTION_FAILED` <br />
 
 Use them as following:
 ```javascript
