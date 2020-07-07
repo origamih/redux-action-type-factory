@@ -9,6 +9,7 @@ describe('Action type factory', () => {
         begin: 'INCREMENT' + '_BEGIN',
         succeeded: 'INCREMENT' + '_SUCCEEDED',
         failed: 'INCREMENT' + '_FAILED',
+        cancelled: 'INCREMENT' + '_CANCELLED',
       }
     });
   });
@@ -21,6 +22,7 @@ describe('Action type factory', () => {
         begin: 'todo/' + 'INCREMENT' + '_BEGIN',
         succeeded: 'todo/' + 'INCREMENT' + '_SUCCEEDED',
         failed: 'todo/' + 'INCREMENT' + '_FAILED',
+        cancelled: 'todo/' + 'INCREMENT' + '_CANCELLED',
       }
     });
   });
