@@ -1,4 +1,4 @@
-import { actionTypesFactory } from "../index";
+import { actionTypesFactory, dictionaryFactory } from "../index";
 
 describe("Action type factory", () => {
   it("should be able to create action type without prefix", () => {
@@ -24,6 +24,16 @@ describe("Action type factory", () => {
         failed: "todo/" + "INCREMENT" + "_FAILED",
         cancelled: "todo/" + "INCREMENT" + "_CANCELLED",
       },
+    });
+  });
+});
+
+describe("Dictionary factory", () => {
+  it("should be able to create a string dictionary", () => {
+    const platforms = dictionaryFactory("android", "ios");
+    return expect(platforms).toEqual({
+      android: "android",
+      ios: "ios",
     });
   });
 });

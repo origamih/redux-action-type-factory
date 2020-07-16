@@ -38,3 +38,23 @@ export function actionTypesFactory(
     {}
   );
 }
+
+export function dictionaryFactory<T extends string[]>(
+  ...args: T
+): {
+  readonly [K in T[number]]: K;
+};
+
+export function dictionaryFactory(
+  ...args: string[]
+): {
+  readonly [k: string]: string;
+} {
+  return args.reduce(
+    (prev, next) => ({
+      ...prev,
+      [next]: next,
+    }),
+    {}
+  );
+}
